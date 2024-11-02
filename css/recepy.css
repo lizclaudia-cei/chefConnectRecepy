@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+main{
+    display: flex;
+    flex:1;
+}
+article{
+    display: flex;
+    flex-direction: column;
+  
+  
+}
+.recepy-header{
+    text-align: center;
+    color: #d49839;
+    margin: 20px;
+    margin-bottom: 10px;
+}
+.recepy-header p{
+    color:#afca61;
+}
+
+.main-content{
+    display: flex;
+    align-items:  flex-start;
+    gap:20px;
+}
+
+.figure{
+    width: 50%;
+    text-align: center;
+}
+.img{
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+.section{
+    width: 50%;
+   padding: 20px;
+}
+.section > section,
+.ingredientes-toppings-optionals,.instructions .aside> section {
+  margin-bottom: 20px; /* Ajusta según el espacio que prefieras */
+}
+
+.description-section{
+margin: 10px;
+}
+.ingredientes-toppings-optionals{
+    display: flex;
+    gap: 20px;
+}
+
+.ingredientes-toppings-optionals section {
+    flex: 1;
+  }
+  .section h2{
+    color: #d49839;
+  }
+.ingredientes-toppings-optionals h2{
+    color: #d49839;
+}
+
+.ingredientes-toppings-optionals ul{
+    list-style:circle;
+    padding: 10px;
+}
+
+.section-aside{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.instructions{
+    padding: 20px;
+}
+
+.instructions h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #d49839;
+} 
+.instructions li{
+    margin-bottom: 10px;
+}
+
+.tips{
+    background-color: #afca61;
+    color: white;
+}
+.tips h2{
+  
+    text-align: center;
+    margin: 20px;
+}
+
+.tips p{margin: 20px;
+}
+
+.aside{
+    padding: 20px;
+
+}
+
+.aside h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #d49839;
+}
+.aside p{
+    margin-bottom: 20px;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 350px;
+    max-width: 350px;
+   
+    margin: 45px;
+    border: 1 dashed rgb(134, 134, 134);
+    box-shadow: 3px 3px 20px 1px rgb(129, 128, 128);
+    border-radius: 10px;
+}
+
+.text{
+    text-align: center;
+    padding: 20px;
+}
+.text h3{
+    margin: 10px;
+    color: #d49839;
+}
+.text p{
+    margin: 10px;
+}
+.water-img{
+    width: 100%;
+    
+    border-radius: 10px 10px 0 0;
+}
+
+.button {
+    background-color: #e7ba2f; /* Color de fondo verde claro */
+    border: 2px solid black;   /* Borde negro */
+    
+    box-shadow: inset 10px 10px 10px #d49839;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 225px;
+    padding: 10px 20px;        /* Espaciado interno */
+    color: black;              /* Color del texto */
+    cursor: pointer;           /* Cambia el cursor al pasar sobre el botón */
+    transition: all 0.2s ease; /* Transición suave al pasar el mouse */
+    
+}
+
+/* Efecto al pasar el mouse */
+.button:hover {
+    background-color: #d49839; /* Cambia el color de fondo al pasar el mouse */
+    box-shadow: inset 10px 10px 10px #e7ba2f;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+    }
+    
+    .main-content .figure, .main-content .section {
+      width: 100%; /* Ocupa el 100% del ancho de la pantalla en móviles */
+    }
+  }
